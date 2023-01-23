@@ -1,0 +1,19 @@
+server:
+  port: 8084
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    incoming-queue: KCB.BNPL.LOAN.QUEUE
+proc:
+  queue-size: 100
+  threads: 8
+
+app:
+  proc:
+    salt: 1199141-89120-30-97273378
+  api:
+    auth:
+      username: bnplservice
+      password: test123
